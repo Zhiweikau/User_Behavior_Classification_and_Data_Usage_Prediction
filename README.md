@@ -19,14 +19,14 @@
   - [3. Bivariate Analysis](#3-bivariate-analysis)
   - [4. Multivariate Analysis](#4-multivariate-analysis)
   
-- [Classification Prediction for User Behavior](#classification-prediction-for-user-behavior)
+- [Classification Prediction of User Behavior](#classification-prediction-of-user-behavior)
   - [1. Feature Engineering for Classification](#1-feature-engineering-for-classification)
   - [2. Model Selection: Random Forest](#2-model-selection-random-forest)
   - [3. Classification Report](#3-classification-report)
   - [4. Confusion Matrix](#4-confusion-matrix)
   - [5. Important Features on Classification](#5-important-features-on-classification)
   
-- [Regression Prediction for Data Usage](#regression-prediction-for-data-usage)
+- [Regression Prediction of Data Usage](#regression-prediction-of-data-usage)
   - [1. Feature Engineering for Regression](#1-feature-engineering-for-regression)
   - [2. Model Selection: Random Forest](#2-model-selection-random-forest-1)
   - [3. Performance Metrics](#3-performance-metrics)
