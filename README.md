@@ -68,7 +68,7 @@ Dataset of user_behavior_dataset csv file:
 - Read the [**user_behavior_dataset.csv**](https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Dataset/user_behavior_dataset.csv) and the table shown as following:
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Data%20Display.png" alt="Main Image" width="800" height="300">
 
-#### 3. Data Cleaning:
+#### 3. Data Checking:
 - Access with the [**Result**](https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Analysis%20PDF/Data%20Preparation%20-%20Data%20Checking.pdf)
 - The dataset contains 700 entries, each representing a unique user with 11 attributes. Key attributes include the User ID (unique identifier), Device Model (5 unique types), Operating System (3 types), App Usage Time (min/day), Screen On Time (hours/day), Battery Drain (mAh/day), Number of Apps Installed, Data Usage (MB/day), Age (42 unique values), Gender (likely binary), and User Behavior Class (5 unique classes). There are no missing values or duplicates, ensuring data completeness and quality. Additionally, the dataset of each attribute has a mix of categorical and numerical data, providing a broad range of information on user behavior and device usage patterns.
 
