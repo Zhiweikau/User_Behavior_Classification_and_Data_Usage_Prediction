@@ -155,6 +155,7 @@ Overall, the combination of robust feature importance insights and strong perfor
 
 #### 5. Refining Feature Engineering for Improved Regression Prediction Performance
 - Random Forests are not sensitive to feature scaling because they operate by splitting data based on feature thresholds rather than on distances or magnitudes. Therefore, applying StandardScaler() to the numerical columns is generally unnecessary when using Random Forests.
+
 Add New Features:
 - App Usage Time (hours/day) = App Usage Time (min/day) / 60
 - App Usage over Screen = App Usage Time (hours/day) / Time On Screen (hours/day)
