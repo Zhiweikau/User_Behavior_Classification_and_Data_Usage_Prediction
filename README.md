@@ -171,7 +171,7 @@ In conclusion, the results from the Random Forest classification model demonstra
 
 ---
 
-### Regression Prediction on Data Usage
+### Regression Prediction of Data Usage
 #### 1. Feature Engineering for Regression:
 - In the feature engineering process for regression prediction, ColumnTransformer is utilized to preprocess the dataset effectively. OneHotEncoder is applied to categorical columns same with the Classification prediction method and the StandardScaler is employed to standardize the numerical columns exclude the feature of Data Usage.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Classification%2CRegression%20-%20ColumnTransformer.png" width="350" height="150">
