@@ -1,6 +1,6 @@
-# User Behavior Classification and Data Usage Prediction <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Title.jpg" alt="Main Image" width="150" height="80"> 
+# User Behavior Classification and Data Usage Prediction 
 ---
-<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Main%20Image.png" alt="Main Image" width="350" height="350">
+<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Title.jpg" alt="Main Image" width="600" height="350">
 
 ### Table of Contents
 
