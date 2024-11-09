@@ -9,9 +9,9 @@
 - [Terminologies Used in Data](#terminologies-used-in-data)
 - [Tools and Technology Used](#tools-and-technology-used)
 - [Data Preparation](#data-preparation)
-  - [1. Import Libraries](#import-libraries)
-  - [2. Load Data](#load-data)
-  - [3. Data Checking](#data-checking)
+  - [1. Import Libraries](#1-import-libraries)
+  - [2. Load Data](#2-load-data)
+  - [3. Data Checking](#3-data-checking)
   
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
   - [1. Descriptive Statistics](#descriptive-statistics)
