@@ -2,8 +2,45 @@
 ---
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Title.jpg" alt="Main Image" width="600" height="350">
 
-### Table of Contents
-
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Data Source](#data-source)
+- [Terminologies Used in Data](#terminologies-used-in-data)
+- [Tools and Technology Used](#tools-and-technology-used)
+- [Data Preparation](#data-preparation)
+  - [1) Import Libraries](#import-libraries)
+  - [2) Load Data](#load-data)
+  - [3) Data Checking](#data-checking)
+  
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [1) Descriptive Statistics](#descriptive-statistics)
+  - [2) Univariate Analysis](#univariate-analysis)
+  - [3) Bivariate Analysis](#bivariate-analysis)
+  - [4) Multivariate Analysis](#multivariate-analysis)
+  
+- [Classification Prediction for User Behavior](#classification-prediction-for-user-behavior)
+  - [1) Feature Engineering for Classification](#feature-engineering-for-classification)
+  - [2) Model Selection: Random Forest](#model-selection-random-forest)
+  - [3) Classification Report](#classification-report)
+  - [4) Confusion Matrix](#confusion-matrix)
+  - [5) Important Features on Classification](#important-features-on-classification)
+  
+- [Regression Prediction for Data Usage](#regression-prediction-for-data-usage)
+  - [1) Feature Engineering for Regression](#feature-engineering-for-regression)
+  - [2) Model Selection: Random Forest](#model-selection-random-forest-1)
+  - [3) Performance Metrics](#performance-metrics)
+  - [4) Important Features on Regression](#important-features-on-regression)
+  - [5) Refining Feature Engineering for Improved Regression Prediction Performance](#refining-feature-engineering-for-improved-regression-prediction-performance)
+  - [6) Cross-Validation](#cross-validation)
+  - [7) Final Prediction](#final-prediction)
+  - [8) Important Features on Final Model](#important-features-on-final-model)
+  - [9) Residual Analysis and Outlier Detection](#residual-analysis-and-outlier-detection)
+  
+- [Summary of Classification and Regression Outcomes](#summary-of-classification-and-regression-outcomes)
+- [Key Insights](#key-insights)
+- [Recommendations](#recommendations)
+- [Conclusion](#conclusion)
 
 
 ### Project Overview
