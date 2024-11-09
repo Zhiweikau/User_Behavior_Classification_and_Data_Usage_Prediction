@@ -76,7 +76,7 @@ Dataset of user_behavior_dataset csv file:
 
 ---
 
-### Tools and Technolohy Used
+### Tools and Technology Used
 - <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Jupyter%20Notebook%20Icon.png" alt="Jupyter Notebook Icon" width="30" height="30"> Python: Data cleaning, transformation, exploratory data analysis (EDA), feature engineering, and model building in this project. Libraries like Pandas and NumPy facilitate efficient data handling, managing tasks such as loading datasets, handling encoding issues and adjusting data types. For EDA, visualization tools like Matplotlib and Seaborn help reveal data patterns, outliers, and relationships, while Pandas Profiling provides comprehensive automated reports. Feature engineering is supported by Scikit-learn with techniques for encoding, scaling, and creating new features to enhance data insights. For classification and regression, Scikit-learn offer a range of models, metrics and cross-validation ensure robust model evaluation.
 
 ---
