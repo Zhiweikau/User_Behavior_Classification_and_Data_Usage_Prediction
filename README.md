@@ -116,6 +116,7 @@ This descriptive statistic for all of the numerical numbers in this dataset excl
 - In summary, while Random Forest can handle various data types without extensive preprocessing, engaging in feature engineering can significantly enhance the model's predictive power and interpretability.
 - The pipeline was created and it illustrated in the diagram showcases the structured workflow for preprocessing data and training a Random Forest classifier.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Classification%20-%20Pipeline.png" width="350" height="150">
+
 - In this prediction process, 20% of the data is allocated for testing, while the remaining 80% is used for training the model. This allocation is a standard practice that ensures there is sufficient data available for both model training and evaluation.
 
 #### 3. Classification Report:
