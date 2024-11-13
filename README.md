@@ -32,7 +32,7 @@
   - [3. Performance Metrics](#3-performance-metrics)
   - [4. Important Features on Regression](#4-important-features-on-regression)
   - [5. Refining Feature Engineering for Improved Regression Prediction Performance](#5-refining-feature-engineering-for-improved-regression-prediction-performance)
-  - [6. Train_Test_Split](#6-train-test-split)
+  - [6. Train_Test_Split](#6-train_test_split)
   - [7. Cross-Validation](#7-cross-validation)
   - [8. Final Prediction](#8-final-prediction)
   - [9. Important Features on Final Model](#9-important-features-on-final-model)
