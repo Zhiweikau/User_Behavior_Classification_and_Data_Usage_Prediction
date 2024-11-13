@@ -32,10 +32,11 @@
   - [3. Performance Metrics](#3-performance-metrics)
   - [4. Important Features on Regression](#4-important-features-on-regression)
   - [5. Refining Feature Engineering for Improved Regression Prediction Performance](#5-refining-feature-engineering-for-improved-regression-prediction-performance)
-  - [6. Cross-Validation](#6-cross-validation)
-  - [7. Final Prediction](#7-final-prediction)
-  - [8. Important Features on Final Model](#8-important-features-on-final-model)
-  - [9. Residual Analysis and Outlier Detection](#9-residual-analysis-and-outlier-detection)
+  - [6. Train_Test_Split](#6-train-test-split)
+  - [7. Cross-Validation](#7-cross-validation)
+  - [8. Final Prediction](#8-final-prediction)
+  - [9. Important Features on Final Model](#9-important-features-on-final-model)
+  - [10. Residual Analysis and Outlier Detection](#10-residual-analysis-and-outlier-detection)
   
 - [Summary of Classification and Regression Outcomes](#summary-of-classification-and-regression-outcomes)
 - [Key Insights](#key-insights)
@@ -181,6 +182,8 @@ In conclusion, the results from the Random Forest classification model demonstra
 - The pipeline created, as illustrated in the accompanying diagram, demonstrates a structured workflow for preprocessing data and training a Random Forest regressor to accurately predict Data Usage.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Pipeline.png" width="350" height="150">
 
+- In this prediction process, 20% of the data is allocated for testing, while the remaining 80% is used for training the model. This allocation is a standard practice that ensures there is sufficient data available for both model training and evaluation.
+
 #### 3. Performance Metrics:
 - Mean Absolute Error (MAE) is approximately 115.64, indicating that on average of the model's predictions deviate from the actual Data Usage values by this amount. The Mean Squared Error (MSE) is 23170.92, which provides a measure of the average squared difference between predicted and actual values, emphasizing the model's predictive accuracy. The R-squared value of 0.93 signifies that the model explains about 93% of the variance in Data Usage, demonstrating a strong fit and the model's effectiveness in capturing the underlying patterns in the data.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Performance%20Metrics%201.png" width="300" height="80">
@@ -210,22 +213,25 @@ Add New Features:
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20K-Means%20Clustering.png" width="500" height="350">
 Lastly, One Hot Encoder was using for the Categorical Columns, which are Device Model, Operating System and Gender.
 
-#### 6. Cross-Validation:
-- **K-Fold Cross-Validation** is an effective technique for evaluating machine learning models, especially useful for ensuring that a model, such as a Random Forest regressor, generalizes well to unseen data. By splitting the dataset into multiple folds, this method allows the model to be trained and validated on different subsets, providing a more reliable estimate of performance and helping to reduce overfitting. Each data point is utilized for both training and validation, maximizing the use of available data. In the implementation, after loading the dataset and defining features and the target variable, a Random Forest regressor is initialized. K-Fold Cross-Validation is then set up with 5 splits, and the model is evaluated using mean squared error (MSE), mean absolute error (MAE), and R-squared (R²) metrics.
-- In conclusion, the **K-Fold Cross-Validation** results indicate that the Random Forest regression model effectively predicts data usage with high accuracy and reliability. Across five folds, the model demonstrates a strong performance, with the average Mean Absolute Error (MAE) of 32.74 and a Mean Squared Error (MSE) of 1887.98, indicating that the predictions are closely aligned with the actual values. The consistently high R-squared (R²) value of 0.9953 further reinforces the model's ability to explain a significant portion of the variance in data usage, showcasing its robustness and effectiveness in capturing the underlying relationships within the dataset.
-<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20K-Fold%20Cross%20Validation.png" width="280" height="550">
+#### 6. Train_Test_Split:
+- In this prediction process, 20% of the data is allocated for testing, while the remaining 80% is used for training the model. This allocation is a standard practice that ensures there is sufficient data available for both model training and evaluation.
 
-#### 7. Final Prediction:
-- The Final Random Forest regression model has been built and evaluated for predicting data usage based on various user behavior metrics. Overall, these results underscore the model's robustness and effectiveness in capturing the complex relationships within the dataset, making it a valuable tool for predicting data usage patterns and informing strategic decisions in user engagement and resource management.
+#### 7. Cross-Validation:
+- **K-Fold Cross-Validation** is an effective technique for evaluating machine learning models, especially useful for ensuring that a model, such as a Random Forest regressor, generalizes well to unseen data. . K-fold Cross-Validation will use the training data and by splitting the dataset into multiple folds, this method allows the model to be trained and validated on different subsets, providing a more reliable estimate of performance and helping to reduce overfitting. Each data point is utilized for both training and validation, maximizing the use of available data. In the implementation, after loading the dataset and defining features and the target variable, a Random Forest regressor is initialized. K-Fold Cross-Validation is then set up with 5 splits, and the model is evaluated using mean squared error (MSE), mean absolute error (MAE), and R-squared (R²) metrics.
+- In conclusion, the **K-Fold Cross-Validation** results indicate that the Random Forest regression model effectively predicts data usage with high accuracy and reliability. Across five folds, the model demonstrates a strong performance, with the average Mean Absolute Error (MAE) of 37.34 and a Mean Squared Error (MSE) of 2565.6461, indicating that the predictions are closely aligned with the actual values. The consistently high R-squared (R²) value of 0.9937 further reinforces the model's ability to explain a significant portion of the variance in data usage, showcasing its robustness and effectiveness in capturing the underlying relationships within the training dataset.
+<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20K-fold%20Cross-Validation.png" width="280" height="550">
+
+#### 8. Final Prediction:
+- The Final Random Forest regression model has been built, do the prediction on Testing Data and evaluate the final performance metrics. Overall, these results underscore the model's robustness and effectiveness in capturing the complex relationships within the dataset, making it a valuable tool for predicting data usage patterns and informing strategic decisions in user engagement and resource management.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Final%20Prediction.png" width="300" height="80">
 
-#### 8. Important Features on Final Model:
+#### 9. Important Features on Final Model:
 - The most significant feature is Battery Drain (mAh/day), which has the highest importance score, indicating it plays a crucial role in predicting data usage. Following closely are User Behavior Class and User Segment, suggesting that user patterns is also significant predictors. Other important features include Number of Apps Installed, App Usage Time (hours/day), and Data Usage per App, which further emphasize the influence of user engagement metrics.
 <img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Important%20Metrics%202.png" width="700" height="350">
 
-#### 9. Residual Analysis and Outlier Detection:
-- The residual plot for the Random Forest regression model indicates a random distribution of residuals around the horizontal line at zero, suggesting that the model effectively captures the underlying trends in data usage without systematic bias. However, the analysis identifies four significant outliers, with residual values ranging from -109.99 to -209.39, indicating instances where the model underestimates actual data usage. While the overall performance of the model appears valid and reliable based on the random distribution of residuals, the presence of these outliers warrants further investigation to understand their impact on the model's predictions and data quality. Overall, the model is operational and demonstrates its capacity to provide dependable predictions for the majority of the dataset.
-<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Residual%20Plot%20and%20Outlier.png" width="500" height="550">
+#### 10. Residual Analysis and Outlier Detection:
+- The residual plot for the Random Forest regression model indicates a random distribution of residuals around the horizontal line at zero and the bule line of upper and lower bound, suggesting that the model effectively captures the underlying trends in data usage without systematic bias. However, the analysis identifies three significant outliers, with residual values ranging from -138.23 to -210.88, indicating instances where the model underestimates actual data usage. While the overall performance of the model appears valid and reliable based on the random distribution of residuals, the presence of these outliers warrants further investigation to understand their impact on the model's predictions and data quality. Overall, the model is operational and demonstrates its capacity to provide dependable predictions for the majority of the dataset.
+<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Residual%20Plot%20and%20Outlier%20Detection.png" width="500" height="550">
 
 ---
 
