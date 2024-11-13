@@ -231,7 +231,7 @@ Lastly, One Hot Encoder was using for the Categorical Columns, which are Device 
 
 #### 10. Residual Analysis and Outlier Detection:
 - The residual plot for the Random Forest regression model indicates a random distribution of residuals around the horizontal line at zero and the bule line of upper and lower bound, suggesting that the model effectively captures the underlying trends in data usage without systematic bias. However, the analysis identifies three significant outliers, with residual values ranging from -138.23 to -210.88, indicating instances where the model underestimates actual data usage. While the overall performance of the model appears valid and reliable based on the random distribution of residuals, the presence of these outliers warrants further investigation to understand their impact on the model's predictions and data quality. Overall, the model is operational and demonstrates its capacity to provide dependable predictions for the majority of the dataset.
-<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Residual%20Plot%20and%20Outlier%20Detection.png" width="500" height="550">
+<img src="https://github.com/Zhiweikau/User_Behavior_Classification_and_Data_Usage_Prediction/blob/main/Images/Regression%20-%20Residual%20Plot%20and%20Outlier%20Detection.png" width="550" height="500">
 
 ---
 
